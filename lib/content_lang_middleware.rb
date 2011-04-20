@@ -23,7 +23,8 @@ module ContentLangMiddleware
 
     def call(env)
       status, headers, body = @app.call(env)
-      puts headers.inspect
+      req = Rack::Request.new(env)
+      puts I18n.locale
       headers['Content-Language'] ||= "de" 
       [status, headers, body]
     end
