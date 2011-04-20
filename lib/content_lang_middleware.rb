@@ -1,3 +1,4 @@
+require 'rack/utils'
 module ContentLangMiddleware
   class ContentLang < ::Rails::Railtie
 
