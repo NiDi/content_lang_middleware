@@ -23,7 +23,7 @@ module ContentLangMiddleware
 
     def call(env)
       status, headers, body = @app.call(env)
-      headers = Utils::HeaderHash.new(headers)
+      puts headers.inspect
       headers['Content-Language'] ||= "de" 
       [status, headers, body]
     end
