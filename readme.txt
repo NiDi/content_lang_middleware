@@ -1,0 +1,1 @@
+A simple rack middleware which sets HTTP Header Content-Language to I18n.locale

@@ -1,13 +1,11 @@
 require 'rack/utils'
 module ContentLangMiddleware
   class ContentLang < ::Rails::Railtie
-
     initializer "add_content_lang_to_middleware" do
       config.app_middleware.use(ContentLangMiddleware)
     end
 
   end
-
 
   class ContentLangMiddleware
     
