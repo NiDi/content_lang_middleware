@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.email       = ["nicolas.dillmann@zweitag.de"]
   s.homepage    = ""
   s.summary     = %q{A simple rack middleware which sets Content-Language}
-  s.description = %q{{A simple rack middleware which sets HTTP Header Content-Language to I18n.locale}
+  s.description = %q{A simple rack middleware which sets HTTP Header Content-Language to I18n.locale}
 
   s.rubyforge_project = "content_lang_middleware"
 
